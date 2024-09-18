@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMES-profile</title>
+    <link rel="stylesheet" href="account.css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-left">THE</div>
+            <div class="logo-right">BLEEP</div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../home/home.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">UPCOMING</a></li>
+            </ul>
+            <div class="current-date">
+                <span id="date-display"></span> <!-- This is where the date will be displayed -->
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="profile">
+            <div class="cover" onclick="changeImage1()"></div>
+            <input type="file" id="imageInput1" style="display:none;" accept="image/*" />
+            <div class="profile-img" onclick="changeImage2()"></div>
+            <input type="file" id="imageInput2" style="display:none;" accept="image/*" />
+            <div class="profile-details">
+                <div class="info">
+                    <div id="profile-name">ANURAG K</div>
+                    <div id="email">example@gmail.com</div>
+                    <div id="birthday">01-01-2020</div>
+                    <div id="bio">"Always up for a challenge!"</div>
+
+                </div>
+
+                <div class="game">
+                    <h1>SPEEDY-PUP</h1>
+                    <div id="high-score">High Score: 12000</div><BR>
+                    <h1>GORILLA-CLASH</h1>
+
+                </div>
+                
+
+                <!-- <div id="profile-name">ANURAG K</div>
+                <div id="high-score">High Score: 12000</div>
+                <div id="level">Level: 25</div>
+                <div id="achievements">Achievements: 10</div>
+                <div id="games-played">Games Played: 150</div>
+                <div id="rank">Rank: #42</div>
+                 -->
+            </div>   
+        </div>
+        <div class="friends">
+            <div class="heading">FRIENDS</div>
+            <div class="friends-search">
+                <input type="search" id="friendName"/><button onclick="sendFriendRequest()">Search</button>
+            </div>
+            <div id="friends-list"></div>
+        </div>
+    </main>
+
+    <nav class="secondary-nav">
+        <ul>
+            <li>
+                <a href="#">PLAY</a>
+                <div class="popup">
+                    <ul>
+                        <li>GORILLA CLASH</li>
+                        <li>SPEEDY PUP</li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">PROFILE</a></li>
+            <li><a onclick="logout()"">LOGOUT</a></li>
+        </ul>
+    </nav>
+    <script src="account.js"></script>
+</body>
+</html>
